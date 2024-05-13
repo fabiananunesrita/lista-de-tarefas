@@ -1,0 +1,129 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+}
+
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+
+.todo-item {
+    list-style-type: none;
+    padding: 7px;
+    background-color: #ebebeb;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+
+.todo-item a {
+    text-align: right;
+}
+
+
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+.todo-item span {
+    display: inline-block;
+}
+
+
+.todo-item .strikethrough {
+    text-decoration: line-through;
+}
+
+
+#todo-input {
+    width: calc(100% - 85px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+#add-button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.button2 {
+    padding: 4px 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ebebeb;
+    color: #333333;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.todo-bar {
+    display: flex;
+    gap: 10px;
+}
+
+
+.todo-item {
+    align-items: center;
+    
+}
+
+
+.todo-item .bi-star-fill {
+    color: gray;
+    transition: color 0.2s;
+    cursor: pointer;
+    float: right;
+    margin-right: 5px;
+}
+
+
+.todo-item.golden .bi-star-fill {
+    color: goldenrod;
+}
+
+
+.todo-item .bi-star-fill:hover {
+    color: goldenrod;
+}
+
+
+.todo-item .bi-trash3-fill {
+    color: gray;
+    transition: color 0.2s;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+}
+
+
+.todo-item .bi-trash3-fill:hover {
+    color: black;
+    float: right;
+}
